@@ -21,6 +21,6 @@ $old_id = $get_user['chat_id'];
 $username = $first_name .  ' ' . $last_name;
 
 
-command($text,$telegram,$chat_id,$name,$first_name,$last_name,$get_user,$old_id,$username,$menu);
+command($text,$telegram,$chat_id,$name,$first_name,$last_name,$menu);
 add_user($connect, $username,$chat_id,$name,$old_id);
 textlog($connect, $chat_id, $text);

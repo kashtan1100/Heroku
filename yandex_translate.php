@@ -2,7 +2,6 @@
 
 function yandex_translate()
 {
-    $token = '1012626756:AAEfnux4jc_W_O8f0x87_L6ejWMMK9wvPhc';
 // key yandex translate
     $key = 'trnsl.1.1.20200429T231812Z.b1c6ea8d99da3d87.a0a6073c05a4e0038bf09d1a73c4ea4c8711f8e1';
     $file = file_get_contents('php://input');
@@ -27,7 +26,7 @@ function yandex_translate()
     }
 
 
-    $output = file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$answer");
+    $output = file_get_contents("https://api.telegram.org/bot1012626756:AAEfnux4jc_W_O8f0x87_L6ejWMMK9wvPhc/sendMessage?chat_id=$chat_id&text=$answer");
     return $output;
 }
 
