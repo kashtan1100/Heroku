@@ -2,9 +2,9 @@
 
 function yandex_translate()
 {
-    $token = "1012626756:AAEfnux4jc_W_O8f0x87_L6ejWMMK9wvPhc";
+    $token = '1012626756:AAEfnux4jc_W_O8f0x87_L6ejWMMK9wvPhc';
 // key yandex translate
-    $key = '';
+    $key = 'trnsl.1.1.20200429T231812Z.b1c6ea8d99da3d87.a0a6073c05a4e0038bf09d1a73c4ea4c8711f8e1';
     $file = file_get_contents('php://input');
     $json = json_decode($file, true);
     $chat_id = $json['message']['chat']['id'];
@@ -31,4 +31,4 @@ function yandex_translate()
     return $output;
 }
 
-yandex_translate();
+//$yandex_translate = yandex_translate();
