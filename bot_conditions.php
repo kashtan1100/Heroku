@@ -33,7 +33,7 @@ function command($text,$telegram,$chat_id,$name,$first_name,$last_name,$menu)
         }
         $telegram->sendMessage(['chat_id' => $chat_id, 'parse_mode' => 'HTML',
             'disable_web_page_preview' => true, 'text' => $reply]);
-    } else if (explode(' ', $text)[0] == "/переводчик") {
+    } else if (explode(' ', $text)[0] == "/tr") {
         yandex_translate();
     } else if ($text = "Inline") {
         $reply = "Inline keyboard";
