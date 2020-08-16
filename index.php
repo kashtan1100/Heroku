@@ -9,6 +9,7 @@ include ('bot_conditions.php');
 use Telegram\Bot\Api;
 
 $telegram = new Api($api);
+$api = ('1012626756:AAEfnux4jc_W_O8f0x87_L6ejWMMK9wvPhc');
 $result = $telegram->getWebhookUpdates();
 
 $text = $result["message"]["text"];                 //Текст сообщения

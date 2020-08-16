@@ -2,7 +2,7 @@
 
 function yandex_translate()
 {
-    $token = "";
+    $token = "1012626756:AAEfnux4jc_W_O8f0x87_L6ejWMMK9wvPhc";
 // key yandex translate
     $key = '';
     $file = file_get_contents('php://input');
