@@ -36,8 +36,8 @@ else if ($text == "Кнопка 2"){
     $telegram->sendMessage(['chat_id' => $chat_id , 'text' => $reply,
         'reply_markup' => $reply_markup]);
 }
-else if ($text == "42") {
-    $img = 'https://project42.space/42.jpg';
+else if ($text == "лунный пельмень") {
+    $img = 'https://onwomen.ru/wp-content/uploads/2020/01/pelmeni-400x266.jpg';
     $reply = "Hello " . $first_name . " " . $last_name;
     $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $menu, 'resize_keyboard' => true, 'one_time_keyboard' => false]);
     $telegram->sendPhoto(['chat_id' => $chat_id, 'photo' => $img, 'caption' => $reply, 'parse_mode' => 'HTML']);
