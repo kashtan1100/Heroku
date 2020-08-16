@@ -31,3 +31,4 @@ function yandex_translate()
     return $output;
 }
 
+yandex_translate();
