@@ -59,7 +59,7 @@ else if ($text == "Новости") {
         'disable_web_page_preview' => true, 'text' => $reply]);
 }
 
-else if (explode(' ', $text)[0] == "/tr") {
-    yandex_translate();
-}
+//else if (explode(' ', $text)[0] == "/tr") {
+//    yandex_translate();
+//}
 
