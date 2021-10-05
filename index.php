@@ -22,20 +22,20 @@ if($text == "/start"){
         'reply_markup' => $reply_markup]);
 
 }
-else if ($text == "Привет"){
-    $reply = "Привет " . $first_name . " " . $last_name;
-    $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $menu,
-        'resize_keyboard' => true, 'one_time_keyboard' => false]);
-    $telegram->sendMessage(['chat_id' => $chat_id , 'text' => $reply,
-        'reply_markup' => $reply_markup]);
-}
-else if ($text == "Кнопка 2"){
-    $reply = "Привет " . $first_name . " " . $last_name . " это кнопка 2";
-    $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $menu,
-        'resize_keyboard' => true, 'one_time_keyboard' => false]);
-    $telegram->sendMessage(['chat_id' => $chat_id , 'text' => $reply,
-        'reply_markup' => $reply_markup]);
-}
+//else if ($text == "Привет"){
+//    $reply = "Привет " . $first_name . " " . $last_name;
+//    $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $menu,
+//        'resize_keyboard' => true, 'one_time_keyboard' => false]);
+//    $telegram->sendMessage(['chat_id' => $chat_id , 'text' => $reply,
+//        'reply_markup' => $reply_markup]);
+//}
+//else if ($text == "Кнопка 2"){
+//    $reply = "Привет " . $first_name . " " . $last_name . " это кнопка 2";
+//    $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $menu,
+//        'resize_keyboard' => true, 'one_time_keyboard' => false]);
+//    $telegram->sendMessage(['chat_id' => $chat_id , 'text' => $reply,
+//        'reply_markup' => $reply_markup]);
+//}
 //else if ($text == "лунный пельмень") {
 //    $img = 'https://onwomen.ru/wp-content/uploads/2020/01/pelmeni-400x266.jpg';
 //    $reply = "Hello " . $first_name . " " . $last_name;
