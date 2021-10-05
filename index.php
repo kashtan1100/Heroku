@@ -5,7 +5,7 @@ include ('menu.php');
 //include ('yandex.php');
 use Telegram\Bot\Api;
 
-$telegram = new Api('1723940371:AAHpSDCfAbmd2liNmCk8E7-cOmEV8z9yuFY');
+$telegram = new Api('2086004204:AAFyWIZZEwzC66FOmBLowQKwcac-oWKGV_U');
 $result = $telegram->getWebhookUpdates();
 
 $text = $result["message"]["text"];
